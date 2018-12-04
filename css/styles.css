@@ -1,0 +1,555 @@
+
+
+/* global */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, p, a{
+  font-family: 'open sans';
+}
+
+p {
+  font-size: 14px;
+}
+
+input, textarea, button, .contact-textbox{
+  color: #000;
+  border-radius: 5px;
+}
+
+::placeholder {
+  color: #000;
+  opacity: 1;
+}
+
+.wrapper {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.blue {
+  background-color: #ecb722;
+  color: #444444;
+}
+
+
+
+.transparent {
+  background: rgba(255,255,255,0.4);
+}
+
+.btn {
+
+  background-color: #ecb722;
+  font-size: 18px;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+
+
+
+/* nav */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: #fff;
+  line-height: 70px;
+  text-align: center;
+  border-bottom: 2px solid #ecb722;
+}
+
+nav ul {
+  overflow: hidden;
+  list-style: none;
+  margin: 0 30px 0 0;
+}
+
+nav ul li {
+  padding: 10px 20px;
+  display: inline;
+  margin-left: 30px;
+  cursor: pointer;
+  transition: background-color ease 1s;
+}
+
+nav ul li:hover {
+  background-color: #ecb722;
+}
+
+nav ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  margin: 0 10px;
+  color: #444444;
+  line-height: 70px;
+}
+
+label {
+  margin: 0 40px 0 0;
+  color: #fff;
+  font-size: 40px;
+  line-height: 70px;
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+
+/* header */
+
+header {
+  position: relative;
+  background: url(../img/archery10.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 614px;
+}
+
+header .main {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: #ecb722;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+header .main h1 {
+  font-size: 65px;
+  text-shadow: 1px 1px 1px #000;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+header .main p {
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+}
+
+
+/* 3-columns  */
+
+.gridwrapper_1 {
+  display: grid;
+  padding-top: 70px;
+  grid-template-columns: 360px 360px 360px;
+  justify-content: center;
+  min-height: 500px;
+  grid-gap: 40px;
+}
+
+.three-images img {
+  width: 100%;
+  height: 180px
+}
+
+.three-images h3 {
+  padding: 20px 5px 10px 5px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.three-images p {
+  padding: 20px 5px 10px 5px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+
+/* 2-columns */
+
+.gridwrapper_2 {
+  display: grid;
+  padding-top: 60px;
+  grid-template-columns: 560px 560px;
+  justify-content: center;
+  grid-gap: 30px;
+  min-height: 700px;
+}
+
+.gridwrapper_2 img {
+  width: 100%;
+  height: 240px;
+}
+
+.gridwrapper_2 h3 {
+  text-align: center;
+  padding: 20px 0 30px;
+}
+
+.gridwrapper_2 p {
+  padding: 0px 25px;
+  text-align: justify;
+}
+
+.gridwrapper_2 button {
+  margin: 20px 0px 20px 30px;
+}
+
+
+/* Services banner */
+
+.banner {
+  position: relative;
+  background-color: #ecb722;
+  background-size: cover;
+  height: 400px;
+}
+
+.banner .banner-text {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
+  color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.banner .banner-text h1 {
+  font-size: 35px;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: 300;
+  padding: 10px 0 20px 0;
+}
+
+.banner .banner-text p {
+  font-size: 20px;
+  text-shadow: 1px 1px 1px #000;
+}
+
+/* 4-column section */
+
+.gridwrapper_3 {
+  display: grid;
+  padding-top: 60px;
+  grid-template-columns: 260px 260px 260px 260px;
+  justify-content: center;
+  grid-gap: 30px;
+  min-height: 700px;
+}
+
+.gridwrapper_3 img {
+  width: 100%;
+  height: 260px;
+}
+
+.gridwrapper_3 h2 {
+  text-align: center;
+  padding: 20px 0 20px 0
+}
+
+.gridwrapper_3 button {
+  margin-top: 30px;
+}
+
+
+/* Big-column */
+
+.gridwrapper_4 {
+  display: grid;
+  padding-top: 60px;
+  grid-template-columns: 1140px;
+  justify-content: center;
+  grid-gap: 30px;
+  min-height: 950px;
+}
+
+.gridwrapper_4 .big-column img{
+  width: 100%;
+  height: 434px;
+}
+
+.gridwrapper_4 .big-column h2 {
+  padding: 40px 0 10px 0;
+}
+
+.gridwrapper_4 .big-column button {
+  margin-top: 30px;
+}
+
+
+/* Contact */
+.contact {
+  position: relative;
+  background: url(../img/archery2.jpg) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 675px;
+}
+
+.contact h1 {
+  font-size: 35px;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  padding: 90px 0 20px 0;
+}
+
+.contact .contact-textbox {
+  position: relative;
+  max-width: 750px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.gridwrapper_5 {
+  display: grid;
+  grid-template-columns: auto 300px 300px;
+  grid-template-rows: auto 40px 40px 40px 55px 40px;
+  justify-content: center;
+  grid-auto-flow: row dense;
+  grid-gap: 1.5em;
+}
+
+.gridwrapper_5 .contact-textbox {
+  grid-column: 2 / 4;
+}
+
+.gridwrapper_5 input,
+.gridwrapper_5 button {
+  grid-column: 2;
+  grid-row: auto;
+  padding: 1em;
+  border: none;
+}
+.gridwrapper_5 textarea {
+  padding: 10px;
+  resize: none;
+  grid-column: 3;
+  grid-row: span 3;
+  width: 100%;
+  border: none;
+}
+
+.gridwrapper_5 button {
+  grid-column: 2 / 4;
+  background-color: #ecb722;
+  color: #fff;
+
+}
+
+/* footer */
+
+footer {
+  position: relative;
+  background-color: #1b447f;
+  height: 200px;
+  text-align: center;
+  color: #fff;
+}
+
+footer .footer-textbox {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+/* media queries */
+
+@media only screen and (max-width: 1185px) {
+
+  /* 3 columns */
+  .gridwrapper_1 {
+    grid-template-columns: 293px 293px 293px;
+  }
+
+  .three-images img {
+    height: 146px
+  }
+
+  /* 2 columns */
+  .gridwrapper_2 {
+    grid-template-columns: 455px 455px;
+  }
+
+  .gridwrapper_2 img {
+    height: 196px
+  }
+
+  /* 4 columns to 2 columns */
+  .gridwrapper_3 {
+    grid-template-columns: 260px 260px;
+    grid-gap: 100px;
+  }
+
+  .gridwrapper_4 {
+    grid-template-columns: 940px;
+  }
+
+  .gridwrapper_4 .big-column img{
+    height: 358px;
+  }
+}
+
+
+
+@media only screen and (max-width: 980px) {
+
+  /* navbar */
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  /* 3 columns */
+  .gridwrapper_1 {
+    grid-template-columns: 220px 220px 220px;
+  }
+
+  .three-images img {
+    height: 110px
+  }
+
+  /* 2 columns */
+  .gridwrapper_2 {
+    grid-template-columns: 345px 345px;
+  }
+
+  .gridwrapper_2 img {
+    height: 149px
+  }
+
+  /* 4 columns to 2 columns */
+  .gridwrapper_3 {
+    grid-template-columns: 260px 260px;
+    grid-gap: 100px;
+  }
+
+
+  /* big-column */
+  .gridwrapper_4 {
+    grid-template-columns: 720px;
+  }
+
+  .gridwrapper_4 .big-column img{
+    height: 274px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+
+  /* navbar */
+
+
+  label {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav {
+    text-align: right;
+  }
+
+  nav ul {
+    text-align: center;
+    display: none;
+    width: 100%;
+  }
+
+  nav ul li {
+    display: block;
+    border: none;
+    border-bottom: 1px solid #eaeaeb;
+    margin: 0;
+  }
+
+  #toggle:checked + ul {
+    display: block;
+  }
+
+  /* 3 columns */
+  .gridwrapper_1 {
+    grid-template-columns: 80%;
+  }
+
+  .three-images img {
+    height: 180px;
+  }
+
+  /* 2 columns */
+  .gridwrapper_2 {
+    grid-template-columns: 80%;
+  }
+
+  .gridwrapper_2 img {
+    height: 240px
+  }
+
+  /* 4 columns to 2 columns */
+  .gridwrapper_3 {
+    grid-template-columns: 300px;
+    grid-gap: 40px;
+  }
+
+  /* big-column */
+  .gridwrapper_4 {
+    grid-template-columns: 80%;
+  }
+
+  .gridwrapper_4 .big-column img{
+    width: 100%;
+  }
+
+  /* contact */
+
+  .gridwrapper_5 {
+    grid-template-columns: auto 80%;
+
+  }
+
+  .contact .contact-textbox {
+    grid-column: 2;
+    grid-row: span auto;
+    width: 100%;
+    border: none;
+  }
+
+  .gridwrapper_5 textarea {
+    grid-column: 2;
+    grid-row: span 3;
+    width: 100%;
+    border: none;
+  }
+  .our-text{
+    color: #394b50;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+
+  .gridwrapper_5 button {
+    grid-column: 2;
+    margin-bottom: 40px;
+  }
